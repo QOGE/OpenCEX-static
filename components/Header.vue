@@ -28,7 +28,16 @@
             </li>
           </ul>
         </div>
-        <a href="/account/login" class="header-btn">{{ $t('login') }}</a>
+        <a
+          v-if="isLoggedIn"
+          href="/account/wallet"
+          class="header-btn"
+        >{{ $t('wallet') }}</a>
+        <a
+          v-else
+          href="/account/login"
+          class="header-btn"
+        >{{ $t('login') }}</a>
         <div class="header__menu" @click.stop="togglePageMenu">
           <div class="burger">
             <img src="/img/burger.svg" />
@@ -80,7 +89,8 @@ export default {
         lang: false,
         page: false
       },
-      scrl: false
+      scrl: false,
+      isLoggedIn: false
     }
   },
   computed: {
@@ -140,6 +150,7 @@ export default {
   mounted() {
     this.addHandlers()
     this.scrollAction()
+    this.isLoggedIn = !!localStorage.getItem('token')
   },
 }
 </script>

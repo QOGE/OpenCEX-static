@@ -82,7 +82,16 @@
         <div class="footer-text">
           <div class="footer-text-title">Trade on the go with {{ this.$config.axios.title }}</div>
           <div class="footer-text-p">Get 24/7 chat support with our friendly customer agents at your service.</div>
-          <a href="/account/login" class="btn">Login</a>
+          <a
+            v-if="isLoggedIn"
+            href="/account/wallet"
+            class="btn"
+          >{{ $t('wallet') }}</a>
+          <a
+            v-else
+            href="/account/login"
+            class="btn"
+          >{{ $t('login') }}</a>
         </div>
       </div>
     </div>
@@ -101,7 +110,15 @@ export default {
       isMenuActivated: {
         lang: false,
       },
+      isLoggedIn: false,
     }
+  },
+  mounted() {
+    this.isLoggedIn = !!localStorage.getItem('token')
+    this.addHandlers()
+  },
+  beforeDestroy() {
+    this.removeHandlers()
   },
   methods: {
     closeAll() {
