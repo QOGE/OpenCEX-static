@@ -2,7 +2,7 @@
   <header id="header" class="header" :class="{scrolled: scrl}">
     <div class="content flex justify-between">
       <div class="header__logo">
-        <nuxt-link :to="`/${lang}`" class="header__logo-link">
+        <nuxt-link to="/" class="header__logo-link">
           <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st.svg'" class="logo-desc" alt="logo" />
           <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st-black.svg'" class="logo-mob" alt="logo" />
         </nuxt-link>
