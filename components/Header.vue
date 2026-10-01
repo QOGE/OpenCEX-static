@@ -74,6 +74,12 @@
                 {{ $t('fees') }}
               </a>
             </li>
+            <li class="navigation__item">
+              <a href="/account/settings" class="navigation__link">
+                <img class="navigation__link__img" width="20" height="20" src="/public/img/menu/cog.svg">
+                {{ $t('settings') }}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
