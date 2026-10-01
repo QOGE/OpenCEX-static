@@ -43,7 +43,7 @@
             </li>
             <li class="navigation__item">
               <a
-                href="/account/trade/BTC-USDT"
+                href="/account/trade/QOGE-USDT"
                 class="navigation__link"
               >
                 <img class="navigation__link__img" width="20" height="20" src="/public/img/menu/line-chart.svg">

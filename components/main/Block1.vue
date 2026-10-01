@@ -9,7 +9,7 @@
             <img src="/img/btc.svg" class="inline-block" />
             <span>BTC Price: {{ course.toFixed(2) }} USDT</span>
           </div>
-          <a class="btn" href="/account/trade/BTC-USDT">Trade Bitcoin Now</a>
+          <a class="btn" href="/account/trade/QOGE-USDT">Trade Qogecoin Now</a>
         </div>
         <div class="block1-right">
           <img src="/img/top.png" />

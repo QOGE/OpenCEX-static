@@ -55,7 +55,7 @@ export const actions = {
   async getGraphInfo ({ commit }) {
     await this.$axios.$post('/api/v1/stats/', {
       frame: 'hour',
-      pair: 'BTC-USDT',
+      pair: 'QOGE-USDT',
       stop_ts: new Date().getTime(),
       start_ts: new Date().getTime() - 60 * 60 * 24 * 7 * 1000
     }).then((data) => {
