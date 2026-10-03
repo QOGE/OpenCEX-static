@@ -12,7 +12,7 @@
           <a class="btn" href="/account/trade/QOGE-USDT">Trade Qogecoin Now</a>
         </div>
         <div class="block1-right">
-          <img src="/img/top.png" />
+          <img src="/img/top.png" alt="Qogecoin" />
         </div>
       </div>
     </div>
@@ -44,6 +44,16 @@ body h1 {
 .block1-left {
   padding-top: 100px;
 }
+.block1-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block1-right img {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+}
 .course {
   padding-bottom: 40px;
 }
@@ -59,6 +69,9 @@ body h1 {
     display: flex !important;
     flex-direction: column;
     align-items: center;
+  }
+  .block1-right img {
+    max-width: 260px;
   }
   .block1-left {
     order: 1;
