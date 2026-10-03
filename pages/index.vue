@@ -6,8 +6,6 @@
         <CurrencyList :filteredPairs="filteredPairs" />
       </div>
     </div>
-    <Block4 />
-    <Block5 />
   </div>
 </template>
 
@@ -15,12 +13,10 @@
 import CurrencyList from '~/components/main/CurrencyList.vue'
 
 import Block1 from '../components/main/Block1.vue'
-import Block4 from '../components/main/Block4.vue'
-import Block5 from '../components/main/Block5.vue'
 
 export default {
   name: "Blog",
-  components: { CurrencyList, Block1, Block4, Block5 },
+  components: { CurrencyList, Block1 },
   head() {
     return {
       title: `${this.$config.axios.title} ${this.$t('title')}`,
