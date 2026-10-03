@@ -2,7 +2,7 @@
   <div class="error-wrapper">
     <div class="error">
       <a :href="homeLink">
-        <img class="error__logo" src="/img/logo_st-black.svg" />
+        <img class="error__logo" src="/img/logo_st-black.png" />
       </a>
       <div class="error__title">{{ error.statusCode }}</div>
       <div class="error__subtitle">{{ subtitle }}</div>

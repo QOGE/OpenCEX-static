@@ -3,8 +3,8 @@
     <div class="content flex justify-between">
       <div class="header__logo">
         <nuxt-link to="/" class="header__logo-link">
-          <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st.svg'" class="logo-desc" alt="logo" />
-          <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st-black.svg'" class="logo-mob" alt="logo" />
+          <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st.png'" class="logo-desc" alt="logo" />
+          <img :src="this.$config.axios.logo ? this.$config.axios.logo : '/img/logo_st-black.png'" class="logo-mob" alt="logo" />
         </nuxt-link>
       </div>
       <div class="header__etc flex justify-between flex-no-wrap">
@@ -272,9 +272,13 @@ export default {
 }
 .logo-mob {
   display: none;
+  height: 28px;
+  width: auto;
 }
 .logo-desc {
   display: inline-block;
+  height: 48px;
+  width: auto;
 }
 @media (max-width: 900px) {
   .header {
