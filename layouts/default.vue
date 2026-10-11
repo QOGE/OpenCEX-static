@@ -24,12 +24,12 @@ export default {
   },
   head() {
     return {
-      title: `${this.$config.axios.title} ${this.$t('title')}`,
+      title: this.$t('title'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: `${this.$config.title} ${this.$t('metaMainDescr')}`,
+          content: this.$t('metaMainDescr'),
         },
         {
           hid: 'og:local',
@@ -64,12 +64,12 @@ export default {
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: `${this.$config.axios.title} ${this.$t('title')}`
+          content: this.$t('title')
         },
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: `${this.$config.axios.title} ${this.$t('metaMainDescr')}`,
+          content: this.$t('metaMainDescr'),
         },
         {
           hid: "t-type",

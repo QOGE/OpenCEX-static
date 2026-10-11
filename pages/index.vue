@@ -19,22 +19,22 @@ export default {
   components: { CurrencyList, Block1 },
   head() {
     return {
-      title: `${this.$config.axios.title} ${this.$t('title')}`,
+      title: this.$t('title'),
         meta: [
             {
                 hid: "description",
                 name: "description",
-                content: `${this.$config.axios.title} ${this.$t("metaMainDescr")}`,
+                content: this.$t("metaMainDescr"),
             },
             {
                 hid: "og:title",
                 name: "og:title",
-                content: `${this.$config.axios.title} ${this.$t("metaMainTitle")}`,
+                content: this.$t("metaMainTitle"),
             },
             {
                 hid: "og:description",
                 name: "og:description",
-                content: `${this.$config.axios.title} ${this.$t("metaMainDescr")}`,
+                content: this.$t("metaMainDescr"),
             },
         ],
     };
