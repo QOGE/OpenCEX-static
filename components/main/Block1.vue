@@ -3,8 +3,8 @@
     <div class="content">
       <div class="grid grid-cols-2 block1">
         <div class="block1-left">
-          <h1>Start Your Crypto Business</h1>
-          <p class="block-text">Trade crypto in the easiest and safest way!</p>
+          <h1>Qogecoin Limited Exchange LEX</h1>
+          <p class="block-text">Trade QOGE with zero fees!</p>
           <div class="course">
             <img
               src="/img/qoge.webp"
