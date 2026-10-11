@@ -4,7 +4,7 @@
       <div class="footer-content-wrapper">
         <div class="footer-copy">
           <div class="copyright">
-            {{ new Date().getFullYear() }} © {{ this.$config.axios.title }} Exchange Crypto Investment Platform
+            {{ new Date().getFullYear() }} © Qoge Limited Exchange, with zero fees!
           </div>
           <div class="rights !mb-2">{{$t('built_by')}}</div>
           <div class="rights">All Rights Reserved</div>
