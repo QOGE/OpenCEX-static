@@ -6,8 +6,12 @@
           <h1>Start Your Crypto Business</h1>
           <p class="block-text">Trade crypto in the easiest and safest way!</p>
           <div class="course">
-            <img src="/img/btc.svg" class="inline-block" />
-            <span>BTC Price: {{ course.toFixed(2) }} USDT</span>
+            <img
+              src="/img/qoge.webp"
+              alt="QOGE"
+              class="course-icon inline-block"
+            />
+            <span>QOGE Price: {{ formattedCourse }} USDT</span>
           </div>
           <a class="btn" href="/account/trade/QOGE-USDT">Trade Qogecoin Now</a>
         </div>
@@ -20,7 +24,14 @@
 </template>
 <script>
 export default {
-  props: ['course']
+  props: ['course'],
+  computed: {
+    formattedCourse() {
+      const price = Number(this.course)
+      if (!Number.isFinite(price) || price <= 0) return '-'
+      return price.toFixed(4)
+    },
+  },
 }
 </script>
 <style>
@@ -56,6 +67,13 @@ body h1 {
 }
 .course {
   padding-bottom: 40px;
+}
+.course-icon {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  margin-right: 6px;
+  border-radius: 50%;
 }
 .course span {
   font-size: 18px;

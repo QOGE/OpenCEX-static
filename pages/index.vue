@@ -1,6 +1,6 @@
 <template>
   <div class="main-bottom-part">
-    <Block1 :course="info.btc_usdt_price" />
+    <Block1 :course="qogeUsdtPrice" />
     <div class="trade">
       <div class="content" style="background-color: initial">
         <CurrencyList :filteredPairs="filteredPairs" />
@@ -45,6 +45,10 @@ export default {
   computed: {
     info() {
       return this.$store.getters.info;
+    },
+    qogeUsdtPrice() {
+      const pair = this.getPairs && this.getPairs['QOGE-USDT']
+      return pair && pair.price ? pair.price : 0
     },
     getPairs() {
       return this.$store.getters.pairs_data;
