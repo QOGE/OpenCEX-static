@@ -12,7 +12,7 @@
           <div class="mobCurrencyList-body">
             <div>
               <strong>{{ $t('price') }}</strong><br/>
-              {{ pair.price ? pair.price.toFixed(2) : '-' }} USDT
+              {{ pair.price ? pair.price.toFixed(4) : '-' }} USDT
             </div>
             <div>
               <strong>{{ $t('vol24h') }}</strong> <br/>
@@ -40,7 +40,7 @@
               <a>{{ pair.pair_data.base.code }}</a
               >
             </td>
-            <td>{{ pair.price ? pair.price.toFixed(2) : '-' }} USDT</td>
+            <td>{{ pair.price ? pair.price.toFixed(4) : '-' }} USDT</td>
             <td>
               {{ pair.volume ? pair.volume.toFixed(2) : '-' }} USDT
             </td>
