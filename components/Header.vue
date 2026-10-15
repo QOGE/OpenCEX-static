@@ -156,7 +156,7 @@ export default {
   mounted() {
     this.addHandlers()
     this.scrollAction()
-    this.isLoggedIn = !!localStorage.getItem('token')
+    this.isLoggedIn = localStorage.getItem('logged_in') === '1' || !!localStorage.getItem('token')
   },
 }
 </script>
